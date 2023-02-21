@@ -1,7 +1,6 @@
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
-import { Social } from '../typings';
 
 export default function Header() {
   return (
