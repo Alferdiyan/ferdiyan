@@ -26,21 +26,11 @@ export default function Hero() {
       </div>
 
       <div className="flex gap-x-2 z-10">
-        <NavMenu href="#about" className="heroButton">
-          About
-        </NavMenu>
-        <NavMenu href="#project" className="heroButton">
-          Project
-        </NavMenu>
-        <NavMenu href="#skill" className="heroButton">
-          Skill
-        </NavMenu>
-        <NavMenu href="#experience" className="heroButton">
-          Experience
-        </NavMenu>
-        <NavMenu href="#contact" className="heroButton">
-          Contact Me
-        </NavMenu>
+        <NavMenu href="#about">About</NavMenu>
+        <NavMenu href="#project">Project</NavMenu>
+        <NavMenu href="#skill">Skill</NavMenu>
+        <NavMenu href="#experience">Experience</NavMenu>
+        <NavMenu href="#contact">Contact Me</NavMenu>
       </div>
     </div>
   );
