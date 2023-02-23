@@ -1,10 +1,10 @@
 import React from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 interface Props {
   projectTitle: string;
   deskripsi: string;
-  gambar: string;
+  gambar: StaticImageData;
 }
 
 export default function ProjectCard({ projectTitle, deskripsi, gambar }: Props) {
