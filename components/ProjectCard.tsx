@@ -1,7 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
 
-export default function ProjectCard({ projectTitle, deskripsi, gambar }) {
+interface Props {
+  projectTitle: string;
+  deskripsi: string;
+  gambar: string;
+}
+
+export default function ProjectCard({ projectTitle, deskripsi, gambar }: Props) {
   return (
     <div>
       <div className="flex flex-row  max-w-md md:max-w-xl lg:max-w-2xl bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
