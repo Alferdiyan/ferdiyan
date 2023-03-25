@@ -1,12 +1,12 @@
 import Footer from '../components/Footer';
 import Head from 'next/head';
 import About from '../components/About';
-import ExperiencePage from '../components/Experience';
+import ExperiencePage from '../components/Service';
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import Projects from '../components/Project';
-import Skills from '../components/Skills';
 import ContactMe from '../components/ContactMe';
+import Service from '../components/Service';
 
 export default function Home() {
   return (
@@ -16,36 +16,29 @@ export default function Home() {
       </Head>
       {/* Header */}
       <Header />
-
       {/* Hero */}
       <section id="Hero">
         <Hero />
       </section>
-
       {/* about */}
       <section id="About">
         <About />
       </section>
 
-      {/* Experience
       <section id="Experience">
-        <ExperiencePage />
-      </section> */}
-
+        <Service />
+      </section>
       {/* <section id="Skills ">
         <Skills />
       </section> */}
-
       {/* Project */}
       <section id="Project">
         <Projects />
       </section>
-
       {/* Contact Me */}
       <section id="contact">
         <ContactMe />
       </section>
-
       <section>
         <Footer />
       </section>
