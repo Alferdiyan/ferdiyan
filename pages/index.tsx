@@ -27,14 +27,14 @@ export default function Home() {
         <About />
       </section>
 
-      {/* Experience */}
+      {/* Experience
       <section id="Experience">
         <ExperiencePage />
-      </section>
+      </section> */}
 
-      <section id="Skills ">
+      {/* <section id="Skills ">
         <Skills />
-      </section>
+      </section> */}
 
       {/* Project */}
       <section id="Project">
