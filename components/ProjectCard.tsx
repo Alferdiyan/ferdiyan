@@ -10,36 +10,25 @@ interface Props {
 export default function ProjectCard({ projectTitle, deskripsi, gambar }: Props) {
   return (
     <div>
-      <div className="flex flex-row  max-w-md md:max-w-xl lg:max-w-2xl bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
-        {/* Card */}
-        <div className="w-1/2 ">
-          <a href="#">
-            <Image className="rounded-t-lg object-fill  flex align-center max-h-min" src={gambar} alt="" />
-          </a>
-        </div>
-
-        <div className="w-1/2 p-5 flex flex-col justify-center content-center text-center py-10">
-          <a href="#">
-            <h5 className="mb-2 text-xl font-bold tracking-tight  text-gray-900 dark:text-white">{projectTitle}</h5>
-          </a>
+      <div className="border border-gray-600 rounded-2xl p-10 hover:px-5 hover:bg-orange-600  max-w-xs h-80 overflow-hidden ">
+        <div className="flex justify-between">
+          <div className="pb-8">
+            <p className="uppercase font-bold tracking-[5px]">WEB DESIGN</p>
+            <p className="font-bold text-2xl">{projectTitle}</p>
+          </div>
           <div>
-            <div>
-              <p className="mb-3  font-normal text-gray-700 dark:text-gray-400">{deskripsi}</p>
-            </div>
-            <div>
-              <a
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-[#F7AB04] rounded-lg hover:bg-[#FEC868] focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                Read more
-                <svg aria-hidden="true" className="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                  <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
-                </svg>
-              </a>
-            </div>
+            <svg width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.1504 25.6606L22.1474 24.9524C22.1474 22.0092 22.3197 19.3258 22.5794 17.5766L22.8068 16.4889C22.9334 15.9128 23.0997 15.2568 23.2732 14.922C23.9081 13.6971 25.1495 12.9392 26.4782 12.9392H26.5939C27.46 12.9678 29.2796 13.7279 29.2796 13.7543C32.2076 14.9829 37.8564 18.6906 40.4653 21.334L41.2234 22.1276C41.422 22.3427 41.645 22.5972 41.7835 22.7956C42.246 23.4081 42.4773 24.1659 42.4773 24.9238C42.4773 25.7698 42.2177 26.5562 41.7268 27.1995L40.9478 28.0401L40.7733 28.2195C38.4061 30.7861 32.2251 34.9829 28.9916 36.2673L28.5035 36.4544C27.916 36.6649 27.0929 36.9161 26.5939 36.9392C25.9589 36.9392 25.3524 36.7916 24.7742 36.5008C24.0521 36.0932 23.4761 35.4499 23.1575 34.6921C22.9546 34.1678 22.6361 32.5926 22.6361 32.564C22.3441 30.9757 22.1747 28.4696 22.1504 25.6606ZM6.47729 24.9383C6.47729 23.2618 7.82346 21.9025 9.4838 21.9025L16.8823 22.5568C18.1848 22.5568 19.2408 23.6231 19.2408 24.9383C19.2408 26.2558 18.1848 27.3198 16.8823 27.3198L9.4838 27.9741C7.82346 27.9741 6.47729 26.6148 6.47729 24.9383Z"
+                fill="white"
+              />
+            </svg>
           </div>
         </div>
-        {/* Card ENd */}
+
+        <div>
+          <Image className="rounded-t-lg flex align-center max-h-min overflow-hidden " src={gambar} width="100%" alt="object" />
+        </div>
       </div>
     </div>
   );
