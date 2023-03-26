@@ -25,14 +25,11 @@ export default function Home() {
         <About />
       </section>
 
-      <section id="Service" className="h-full">
+      <section id="Service" className="lg:h-full">
         <Service />
       </section>
-      {/* <section id="Skills ">
-        <Skills />
-      </section> */}
-      {/* Project */}
-      <section id="Project" className="h-full">
+
+      <section id="Project" className="lg:h-full">
         <Projects />
       </section>
       {/* Contact Me */}
