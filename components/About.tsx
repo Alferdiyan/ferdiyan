@@ -4,42 +4,27 @@ import Image from 'next/image';
 
 export default function About() {
   return (
-    <div className="">
-      <div>
-        <h3 className="uppercase text-center tracking-[20px] py-10 top-14 text-gray-400 text-2xl md:mb-28  ">About</h3>
-      </div>
-      <div className="flex flex-col  text-center md:text-left md:flex-row  max-w-7xl px-10 mx-auto items-center ">
-        <div className="md:w-1/3">
-          <motion.img
-            initial={{
-              x: -200,
-              opacity: 0,
-            }}
-            whileInView={{
-              x: 0,
-              opacity: 1,
-            }}
-            viewport={{
-              once: true,
-            }}
-            transition={{
-              duration: 1.2,
-            }}
-            src="https://alferdiyan.github.io/img/Eka-Ferdiyanto1.jpg"
-            className="mb-20  md:mb-0 flex-shrink-0 w-36 top-30 h-36 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 xl:w-[200px] xl:h-[300px] relative"
-          />
-        </div>
-        <div className="w-3/4">
-          <div className="space-y-10 px-0 md:px-10">
-            <h2 className="text-4xl font-semibold">
-              Here is a <span className="underline decoration-[#f7ab0a]">Little</span> Backgorund
-            </h2>
-            <p>
-              Hello I'm Ferdiyan, a multidisciplinary fron end developer who focuses on telling my clients’ stories visually, through enjoyable and meaningful experiences. I specialize in responsive websites and functional user interfaces
+    <section id="about" className="py-16">
+      <div className="container mx-auto">
+        <div className="flex flex-wrap justify-center items-center">
+          <div className="w-full md:w-2/3 text-center md:text-left p-10">
+            <div>
+              <h3 className="uppercase text-center tracking-[20px] py-6 top-14 text-gray-400 text-2xl  md:mb-10  ">About Me</h3>
+            </div>
+            <p className="text-gray-300 text-lg mb-4 ">
+              Hi, my name is Eka Ferdiyanto and I'm a professional front-end developer with over 5 years of experience in building responsive and user-friendly websites. I specialize in front-end development using modern web technologies
+              such as React, Vue.js, and Angular.
+            </p>
+            <p className="text-gray-300 text-lg mb-4">
+              I am passionate about creating clean, elegant, and functional designs that enhance the user experience. I have a strong eye for detail and a deep understanding of the latest web design trends and best practices.
+            </p>
+
+            <p className="text-gray-300 text-lg mb-4">
+              In my free time, I enjoy exploring new technologies on web development. I also contribute to open-source projects and share my knowledge and experience with the community through blog posts and tutorials.
             </p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
