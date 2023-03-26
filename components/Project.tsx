@@ -10,8 +10,8 @@ export default function Project() {
     <div className="h-full text-center flex flex-col md:text-left max-w-[2000px] xl:px-10 min-h-screen xl:space-y-0 mx-auto items-center ">
       <h1 className="flex justify-center uppercase tracking-[20px] text-gray-500 text-2xl mt-10 mb-10">Project</h1>
 
-      <div className="flex justify-center">
-        <div className="flex flex-wrap gap-3">
+      <div className="flex justify-center ">
+        <div className="flex flex-wrap gap-3 items-center justify-center">
           <ProjectCard gambar={project3} projectTitle="Alpo Picture" deskripsi="Web Developer" />
           <ProjectCard gambar={project1} projectTitle="Noteworthy technology" deskripsi="Product design" />
           <ProjectCard gambar={project2} projectTitle="Clonning Heylink me" deskripsi="Fornt End developer" />
