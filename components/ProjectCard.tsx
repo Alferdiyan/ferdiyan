@@ -27,7 +27,7 @@ export default function ProjectCard({ projectTitle, deskripsi, gambar }: Props) 
         </div>
 
         <div>
-          <Image className="rounded-t-lg flex align-center max-h-min overflow-hidden " src={gambar} width="100%" alt="object" />
+          <Image className="rounded-t-lg flex align-center max-h-min overflow-hidden " src={gambar} width="100" alt="object" />
         </div>
       </div>
     </div>
