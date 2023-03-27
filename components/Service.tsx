@@ -4,9 +4,7 @@ import mobileDev from '@/public/mobileDev.png';
 import webDev from '@/public/webDev.png';
 import uiUX from '@/public/uiUX.png';
 
-type Props = {};
-
-export default function Service({}: Props) {
+export default function Service(): JSX.Element {
   return (
     <div className="h-max py-8">
       <div className="flex justify-center uppercase tracking-[20px] text-gray-500 text-2xl mt-10 m-30">Provide Services</div>
