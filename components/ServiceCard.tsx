@@ -10,11 +10,11 @@ interface Props {
 
 export default function ServiceCard({ judul, description, logo }: Props) {
   return (
-    <div className=" border border-stone-800 rounded-lg hover:bg-orange-600 hover:text-2xl h-80 w-80  flex flex-col bg-stone-700  justify-center items-center p-5">
+    <div className="border border-stone-800 rounded-lg hover:bg-orange-600 hover:text-2xl h-80 w-80  flex flex-col bg-stone-700  justify-center items-center p-5">
       <div>
         <div className="relative flex justify-center items-center">
           {/* <Image src={blob} alt="image" className="absolute z-10" /> */}
-          <Image src={logo} width="100" height="100" alt="object" />
+          <Image src={logo} width="100" height="100" alt="object" className="" />
         </div>
       </div>
       <br />
