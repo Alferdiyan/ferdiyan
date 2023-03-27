@@ -10,7 +10,7 @@ interface Props {
 export default function ProjectCard({ projectTitle, deskripsi, gambar }: Props) {
   return (
     <div>
-      <div className="border border-gray-600 rounded-2xl p-10 hover:px-5 hover:bg-orange-600  max-w-xs h-80 overflow-hidden ">
+      <div className="border border-gray-600 rounded-2xl p-10 hover:px-5 hover:bg-orange-600  w-80 h-80 overflow-hidden ">
         <div className="flex justify-between">
           <div className="pb-8">
             <p className="uppercase font-bold tracking-[5px]">WEB DESIGN</p>
@@ -26,8 +26,8 @@ export default function ProjectCard({ projectTitle, deskripsi, gambar }: Props) 
           </div>
         </div>
 
-        <div>
-          <Image className="rounded-t-lg flex align-center max-h-min overflow-hidden " src={gambar} width="100" alt="object" />
+        <div className="flex justify-center">
+          <Image className="rounded-t-lg flex align-center h-full overflow-hidden " src={gambar} width="200" alt="object" />
         </div>
       </div>
     </div>
