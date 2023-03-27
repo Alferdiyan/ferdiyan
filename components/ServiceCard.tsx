@@ -14,7 +14,7 @@ export default function ServiceCard({ judul, description, logo }: Props) {
       <div>
         <div className="relative flex justify-center items-center">
           {/* <Image src={blob} alt="image" className="absolute z-10" /> */}
-          <Image alt="object" src={logo} width="100" height="100" />
+          <Image src={logo} width="100" height="100" alt="object" />
         </div>
       </div>
       <br />
