@@ -7,6 +7,7 @@ import Hero from '../components/Hero';
 import Projects from '../components/Project';
 import ContactMe from '../components/ContactMe';
 import Service from '../components/Service';
+import NavScrolled from '@/components/NavScrolled';
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
         <title>Alferdiyan's Porfolio</title>
       </Head>
       {/* Header */}
-      <Header />
+      <NavScrolled />
+      {/* <Header /> */}
       {/* Hero */}
       <section id="Hero">
         <Hero />
