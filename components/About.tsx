@@ -1,6 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import GetInTouch from './button/GetInTouch';
+import Link from 'next/link';
 
 export default function About() {
   return (
@@ -22,6 +24,14 @@ export default function About() {
             <p className="text-gray-300 text-lg mb-4">
               In my free time, I enjoy exploring new technologies on web development. I also contribute to open-source projects and share my knowledge and experience with the community through blog posts and tutorials.
             </p>
+          </div>
+          <div className="flex flex-wrap gap-4">
+            <GetInTouch />
+            <div className="border px-4 py-2 rounded-full hover:bg-orange-400">
+              <Link href="#">
+                <button>download My CV</button>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
