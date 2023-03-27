@@ -1,8 +1,8 @@
 import React from 'react';
 import ServicesCard from './ServiceCard';
-import mobileDev from '@/public/mobileDev.png';
-import webDev from '@/public/webDev.png';
-import uiUX from '@/public/uiUX.png';
+import mobileDev from '../public/mobileDev.png';
+import webDev from '../public/webDev.png';
+import uiUX from '../public/uiUX.png';
 
 export default function Service(): JSX.Element {
   return (

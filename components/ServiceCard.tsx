@@ -1,11 +1,11 @@
-import Image, { ImageProps } from 'next/image';
+import Image, { ImageProps, StaticImageData } from 'next/image';
 import React from 'react';
 import blob from '@/public/blob.svg';
 
 interface Props {
   judul: string;
   description: string;
-  logo: ImageProps;
+  logo: StaticImageData;
 }
 
 export default function ServiceCard({ judul, description, logo }: Props) {
@@ -14,7 +14,7 @@ export default function ServiceCard({ judul, description, logo }: Props) {
       <div>
         <div className="relative flex justify-center items-center">
           {/* <Image src={blob} alt="image" className="absolute z-10" /> */}
-          <Image alt="logo" src={logo} height={80} width={80} />
+          <Image alt="object" src={logo} width="100" height="100" />
         </div>
       </div>
       <br />
