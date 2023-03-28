@@ -8,8 +8,8 @@ export default function About() {
   return (
     <section id="about" className="py-16">
       <div className="container mx-auto">
-        <div className="flex flex-wrap justify-center items-center">
-          <div className="w-full md:w-2/3 text-center md:text-left p-10">
+        <div className="flex flex-col justify-center items-center px-3">
+          <div className="w-full md:w-2/3 text-center md:text-left p-10 border border-gray-800 rounded-2xl">
             <div>
               <h3 className="uppercase text-center tracking-[20px] py-6 top-14 text-gray-400 text-2xl  md:mb-10  ">About Me</h3>
             </div>
@@ -25,7 +25,7 @@ export default function About() {
               In my free time, I enjoy exploring new technologies on web development. I also contribute to open-source projects and share my knowledge and experience with the community through blog posts and tutorials.
             </p>
           </div>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-4 mt-4">
             <GetInTouch />
             <div className="border px-4 py-2 rounded-full hover:bg-orange-400">
               <Link href="#">
