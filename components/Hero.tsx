@@ -4,6 +4,8 @@ import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircle from './BakgroundCircle';
 import photo from '../public/image/Eka_ferdiyanto.png';
 import NavMenu from './NavMenu';
+import NavScrolled from './NavScrolled';
+import Navbar from './Navbar';
 
 export default function Hero() {
   const [text, count] = useTypewriter({
@@ -13,6 +15,9 @@ export default function Hero() {
   });
   return (
     <div className="h-screen flex flex-col space-y-4 items-center justify-center text-center">
+      {/* <Navbar /> */}
+      {/* <NavScrolled /> */}
+      {/* <MobileNav /> */}
       <div className="z-0">
         <BackgroundCircle />
       </div>
