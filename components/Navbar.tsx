@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 
 import React, { useState } from 'react';
@@ -6,11 +8,12 @@ import ResponsiveNavLink from './ResponsiveNavLink';
 
 const Navbar = () => {
   const [menuItems] = useState([
-    { id: 1, name: 'Home', link: '/' },
-    { id: 2, name: 'About', link: '#' },
-    { id: 3, name: 'Services', link: '#' },
+    { id: 2, name: 'About Me', link: '#' },
+    { id: 3, name: 'Project', link: '#' },
     { id: 4, name: 'Portfolio', link: '#' },
-    { id: 5, name: 'Contact Me', link: '/ContactMe' },
+    { id: 5, name: 'Instagram', link: '/contactme' },
+    { id: 6, name: 'Behance', link: '#' },
+    { id: 7, name: 'Dribbble', link: '#' },
   ]);
   const [toggleMenu, setToggleMenu] = React.useState(false);
   const [open, setOpen] = useState(false);
@@ -37,7 +40,7 @@ const Navbar = () => {
       {/* Desktop Nav */}
 
       {/* Mobile Nav */}
-      <div className="flex justify-between items-center md:hidden mb-10 border border-emerald-300">
+      <div className="flex justify-between items-center md:hidden mb-10 ">
         <div>
           {/* <Image src="/logo1.svg" alt="logo" width={50} height={50} /> */}
           <a href="/" className="font-semibold">
@@ -75,7 +78,7 @@ const Navbar = () => {
           <ul
             className={`${
               open ? 'block' : 'hidden'
-            } bg-slate-500 absolute left-10 right-14 border rounded-b-xl top-0 mt-16 py-2  z-50 px-7  `}
+            } bg-slate-500 absolute left-10 right-10 border rounded-b-xl top-0 mt-16 py-2  z-50 px-7  `}
           >
             {menuItems.map((item) => (
               <li key={item.id} className="hover:bg-slate-400">

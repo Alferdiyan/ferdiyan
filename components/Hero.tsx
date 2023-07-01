@@ -1,29 +1,35 @@
+'use client';
 import Image from 'next/image';
 import React from 'react';
 import { Cursor, useTypewriter } from 'react-simple-typewriter';
 import BackgroundCircle from './BakgroundCircle';
 import photo from '../public/image/Eka_ferdiyanto.png';
-import NavMenu from './NavMenu';
-import NavScrolled from './NavScrolled';
 import Navbar from './Navbar';
 
 export default function Hero() {
   const [text, count] = useTypewriter({
-    words: ["Hi, My Name's Eka Ferdiyanto", 'Guy-who-love-coffee', '<ButLovesToCodeMore />'],
+    words: [
+      "Hi, My Name's Eka Ferdiyanto",
+      'Guy-who-love-coffee',
+      '<ButLovesToCodeMore />',
+    ],
     loop: true,
     delaySpeed: 2000,
   });
   return (
     <div className="h-screen flex flex-col space-y-4 items-center justify-center text-center">
-      {/* <Navbar /> */}
-      {/* <NavScrolled /> */}
-      {/* <MobileNav /> */}
       <div className="z-0">
         <BackgroundCircle />
       </div>
-      <Image className="w-40 mx-auto object-cover rounded-full" src={photo} alt="personal" />
+      <Image
+        className="w-40 mx-auto object-cover rounded-full"
+        src={photo}
+        alt="personal"
+      />
       <div>
-        <h2 className="text-sm uppercase text-gray-500   tracking-[10px] ">Web Developer & UI Designer</h2>
+        <h2 className="text-sm uppercase text-gray-500   tracking-[10px] ">
+          Web Developer & UI Designer
+        </h2>
         <h1 className="text-3xl md:text-5xl  font-semibold px-5">
           <span className="mr-5">{text}</span>
           <Cursor cursorColor="#f7ab0a" />
@@ -31,11 +37,11 @@ export default function Hero() {
       </div>
 
       <div className="flex gap-x-2 z-10">
-        <NavMenu href="#about">About</NavMenu>
+        {/* <NavMenu href="#about">About</NavMenu>
         <NavMenu href="#project">Project</NavMenu>
         <NavMenu href="#skill">Skill</NavMenu>
         <NavMenu href="#experience">Experience</NavMenu>
-        <NavMenu href="#contact">Contact Me</NavMenu>
+        <NavMenu href="#contact">Contact Me</NavMenu> */}
       </div>
     </div>
   );
