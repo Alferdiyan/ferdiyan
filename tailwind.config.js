@@ -15,23 +15,23 @@ module.exports = {
     themes: [
       {
         mytheme: {
-          primary: '#f97316',
+          primary: '#5E7EBF',
 
-          secondary: '#bff9fc',
+          secondary: '#9BCAF2',
 
-          accent: '#9082e0',
+          accent: '#6DE5F2',
 
-          neutral: '#211c30',
+          neutral: '#31293d',
 
-          'base-100': '#ffffff',
+          'base-100': '#e8e8e8',
 
-          info: '#324fd2',
+          info: '#5ea1f3',
 
-          success: '#1fe59c',
+          success: '#27c48a',
 
-          warning: '#f1c346',
+          warning: '#F2D335',
 
-          error: '#fd645e',
+          error: '#F2C879',
         },
       },
       'bumblebee',
