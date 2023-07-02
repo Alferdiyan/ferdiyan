@@ -1,10 +1,10 @@
 import About from '@/components/About';
 import ContactMe from '@/components/ContactMe';
-import Hero from '@/components/Hero';
+// import Hero from '@/components/Hero2';
 import Navbar from '@/components/Navbar';
 import Project from '@/components/Project';
 import Service from '@/components/Service';
-import Hero1 from '@/components/Hero1';
+import Hero from '@/components/Hero';
 import { profile } from '@/components/constant';
 
 import Image from 'next/image';
@@ -14,7 +14,7 @@ export default function Home() {
     <main className="">
       {/* <Navigation /> */}
       {/* <Hero /> */}
-      <Hero1
+      <Hero
         name="Eka Ferdiyanto"
         role="web developer"
         description="Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi"
