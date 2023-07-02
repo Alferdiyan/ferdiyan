@@ -9,10 +9,10 @@ import ResponsiveNavLink from './ResponsiveNavLink';
 const Navbar = () => {
   const [menuItems] = useState([
     { id: 2, name: 'About', link: '#' },
-    { id: 3, name: 'Project', link: '#' },
+    { id: 3, name: 'Service', link: '#' },
     { id: 4, name: 'Portfolio', link: '#' },
-    { id: 5, name: 'Driblle', link: '/contactme' },
-    { id: 6, name: 'Behance', link: '#' },
+    { id: 5, name: 'Driblle', link: 'https://dribbble.com/FerdiyanDSIGN' },
+    { id: 6, name: 'Behance', link: 'https://www.behance.net/ferdiyanUI' },
   ]);
   const [toggleMenu, setToggleMenu] = React.useState(false);
   const [open, setOpen] = useState(false);
