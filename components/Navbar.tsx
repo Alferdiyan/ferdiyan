@@ -8,29 +8,28 @@ import ResponsiveNavLink from './ResponsiveNavLink';
 
 const Navbar = () => {
   const [menuItems] = useState([
-    { id: 2, name: 'About Me', link: '#' },
+    { id: 2, name: 'About', link: '#' },
     { id: 3, name: 'Project', link: '#' },
     { id: 4, name: 'Portfolio', link: '#' },
-    { id: 5, name: 'Instagram', link: '/contactme' },
+    { id: 5, name: 'Driblle', link: '/contactme' },
     { id: 6, name: 'Behance', link: '#' },
-    { id: 7, name: 'Dribbble', link: '#' },
   ]);
   const [toggleMenu, setToggleMenu] = React.useState(false);
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="z-20 text-red-500 mt-4 px-10">
+    <nav className=" bg-accent z-20 text-primary  py-4 px-10">
       {/* Desktop Nav */}
       {/* <div className="hidden md:flex md:justify-between items-center"> */}
       <div className="justify-between hidden md:flex">
         {/* Nav Menu */}
-        <a href="/" className="font-">
+        <a href="/" className="font-semibold hover:text-secondary text-3xl">
           Ferdiyan
         </a>
 
-        <ul className={`flex gap-4 justify-center  items-center`}>
+        <ul className={`flex gap-4 justify-center   items-center`}>
           {menuItems.map((item) => (
-            <li key={item.id}>
+            <li className="hover:text-secondary" key={item.id}>
               <a href={item.link}>{item.name}</a>
             </li>
           ))}
@@ -43,18 +42,18 @@ const Navbar = () => {
       <div className="flex justify-between items-center md:hidden mb-10 ">
         <div>
           {/* <Image src="/logo1.svg" alt="logo" width={50} height={50} /> */}
-          <a href="/" className="font-semibold">
+          <a href="/" className="font-semibold ">
             Ferdiyan
           </a>
         </div>
         <GetInTouch />
 
-        <div className=" border">
+        <div className="">
           <div
             onClick={() => setOpen(false)}
             className={`${
               open ? 'block' : 'hidden'
-            } bg-transparent fixed inset-0 z-40`}
+            } bg-transparent fixed inset-0 z-40 cursor`}
           ></div>
           <button
             onClick={() => setOpen((open) => !open)}
@@ -65,7 +64,7 @@ const Navbar = () => {
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
-              className="text-white w-6 h-6"
+              className="text-primary w-6 h-6"
             >
               <path
                 strokeLinecap="round"

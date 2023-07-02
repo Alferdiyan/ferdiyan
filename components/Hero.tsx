@@ -27,11 +27,11 @@ export default function Hero() {
         alt="personal"
       />
       <div>
-        <h2 className="text-sm uppercase text-gray-500   tracking-[10px] ">
+        <h2 className="text-sm uppercase text-secondary font-bold   tracking-[10px] ">
           Web Developer & UI Designer
         </h2>
-        <h1 className="text-3xl md:text-5xl  font-semibold px-5">
-          <span className="mr-5">{text}</span>
+        <h1 className="text-3xl md:text-4xl font-semibold px-5">
+          <span className="mr-5 text-secondary">{text}</span>
           <Cursor cursorColor="#f7ab0a" />
         </h1>
       </div>
