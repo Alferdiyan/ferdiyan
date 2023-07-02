@@ -18,7 +18,7 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className=" bg-accent z-20 text-primary  py-4 px-10">
+    <nav className=" bg-base-100 z-20 text-primary  py-4 ">
       {/* Desktop Nav */}
       {/* <div className="hidden md:flex md:justify-between items-center"> */}
       <div className="justify-between hidden md:flex">
