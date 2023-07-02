@@ -30,7 +30,7 @@ export default function Project() {
   ];
 
   return (
-    <div className="h-full text-center flex flex-col md:text-left max-w-[2000px] xl:px-10 min-h-screen xl:space-y-0 mx-auto items-center ">
+    <div className="h-full text-center flex flex-col md:text-left sm:max-w-[2000px] xl:px-10 min-h-screen xl:space-y-0 mx-auto items-center ">
       <h1 className="flex justify-center uppercase tracking-[20px] text-primary text-2xl mt-10 mb-10">
         Project
       </h1>
