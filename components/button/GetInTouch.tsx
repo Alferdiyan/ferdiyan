@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import React from 'react';
+import React, { Children } from 'react';
 
 export default function GetInTouch() {
   return (
-    <div className="border  px-4 py-2 rounded-full hover:bg-orange-500">
+    <div className="min-w-fit shadow-sm btn-primary text-white px-4 py-2 rounded-xl hover:bg-secondary hover:text-primary">
       <Link href="/contactme">
         <button>Get In Touch</button>
       </Link>
