@@ -10,7 +10,7 @@ type Props = {
 export default function CardGlass({ cardTitle, description, images }: Props) {
   return (
     <div>
-      <div className="card h-[600px] w-[500px] glass">
+      <div className="card h-[400px] sm:h-[600px] w-[400px] sm:w-[500px] glass">
         <figure>
           <Image src={images} alt="car!" />
         </figure>
@@ -18,11 +18,10 @@ export default function CardGlass({ cardTitle, description, images }: Props) {
           <h2 className="card-title">{cardTitle}</h2>
           <p>{description}</p>
           <div className="card-actions justify-end">
-            <button className="btn btn-primary">Learn now!</button>
+            <button className="btn btn-primary">Learn more!</button>
           </div>
         </div>
       </div>
-      ;
     </div>
   );
 }
