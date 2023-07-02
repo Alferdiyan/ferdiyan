@@ -1,6 +1,7 @@
 import Navbar from '@/components/Navbar';
 import './globals.css';
 import { Inter } from 'next/font/google';
+import abstract from '../public/image/abstrak.png';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -15,11 +16,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="bg-gray-600">
-      <body className={`${inter.className}`}>
+    <html lang="en" className="bg-base-100" data-theme="mytheme">
+      <body className={`${inter.className} `}>
         <Navbar />
         {children}
-        <footer className="footer  items-center p-4 bg-neutral text-neutral-content">
+        <footer className="footer  items-center p-4 bg-accent text-neutral-content">
           <div className="items-center grid-flow-col">
             <svg
               width="36"
@@ -34,7 +35,7 @@ export default function RootLayout({
             </svg>
             <p>Copyright © 2023 - All right reserved</p>
           </div>
-          <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+          <div className=" grid-flow-col gap-4 md:place-self-center md:justify-self-end">
             <a>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
