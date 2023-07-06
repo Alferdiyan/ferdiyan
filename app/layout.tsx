@@ -23,7 +23,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-base" data-theme="mytheme">
       <body className={`${inter.className} overflow-x-hidden`}>
-        <section className="px-20">
+        <section className="px-5 sm:px-10 md:px-20">
           <Navbar />
           {children}
         </section>
