@@ -9,6 +9,25 @@ import Image from 'next/image';
 
 const inter = Inter({ subsets: ['latin'] });
 
+const socialIcons = [
+  {
+    url: 'https://www.youtube.com/ferdiyan',
+    icon: 'youtube',
+  },
+  {
+    url: 'https://github.com/Alferdiyan',
+    icon: 'github',
+  },
+  {
+    url: 'https://www.linkedin.com/in/eka-ferdiyanto-11ab551b2/',
+    icon: 'linkedin',
+  },
+  {
+    url: 'https://www.instagram.com/ferdiyan.id',
+    icon: 'instagram',
+  },
+];
+
 export default function RootLayout({
   children,
 }: {
@@ -43,26 +62,16 @@ export default function RootLayout({
               }}
               className="flex flex-row items-center"
             >
-              <SocialIcon
-                url="https://www.youtube.com/ferdiyan"
-                fgColor="white"
-                bgColor="transparent"
-              />
-              <SocialIcon
-                url="https://github.com/Alferdiyan"
-                fgColor="white"
-                bgColor="transparent"
-              />
-              <SocialIcon
-                url="https://www.linkedin.com/in/eka-ferdiyanto-11ab551b2/"
-                fgColor="white"
-                bgColor="transparent"
-              />
-              <SocialIcon
-                url="https://www.instagram.com/ferdiyan.id"
-                fgColor="white"
-                bgColor="transparent"
-              />
+              {socialIcons.map((icon, index) => (
+                <SocialIcon
+                  key={index}
+                  url={icon.url}
+                  fgColor="white"
+                  bgColor="transparent"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                />
+              ))}
             </motion.div>
           </div>
         </footer>
