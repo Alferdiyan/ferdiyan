@@ -2,7 +2,6 @@
 import Navbar from '@/components/Navbar';
 import './globals.css';
 import { Inter } from 'next/font/google';
-import abstract from '../public/image/abstrak.png';
 import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
 import Logo from '@/public/ferdiyan.svg';
@@ -27,7 +26,7 @@ export default function RootLayout({
             <Image src={Logo} alt="logo" width={40} height={40} />
             <p>Copyright Ferdiyan© 2023 - All right reserved</p>
           </div>
-          <div className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+          <div className="grid-flow-col gap-4 place-self-center md:justify-self-end">
             <motion.div
               initial={{
                 x: 500,
