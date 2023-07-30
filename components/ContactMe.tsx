@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 export default function ContactMe() {
@@ -9,7 +10,9 @@ export default function ContactMe() {
         </div>
         <div className="flex flex-col justify-center items-center">
           <p className="text-3xl md:text-7xl font-semibold">
-            Lets Work Together
+            <Link href="/contactme">
+              <button>Lets Work Together</button>
+            </Link>
           </p>
           <p className=" text-xs p-10 text-neutral text-center">
             Feel free to reach out to me any time. I prefer to talk over email,

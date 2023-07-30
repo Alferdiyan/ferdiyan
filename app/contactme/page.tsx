@@ -1,6 +1,9 @@
 'use client';
 import React from 'react';
 import { useForm } from 'react-hook-form';
+import { metadata } from '@/app/layout';
+
+metadata.title = 'Contact Me';
 
 export default function ContactMe() {
   const {
