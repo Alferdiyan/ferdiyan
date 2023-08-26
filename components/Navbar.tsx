@@ -20,7 +20,7 @@ const Navbar = () => {
     const [open, setOpen] = useState(false);
 
     return (
-        <nav className="px-5 sm:px-10 md:px-20">
+        <div className="px-5 sm:px-10 md:px-20">
             <div className="  z-20 text-primary   relative">
                 {/* Desktop Nav */}
                 {/* <div className="hidden md:flex md:justify-between items-center"> */}
@@ -109,7 +109,7 @@ const Navbar = () => {
                 </div>
                 {/* Mobile Nav */}
             </div>
-        </nav>
+        </div>
     );
 };
 
