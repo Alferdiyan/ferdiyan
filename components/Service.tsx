@@ -3,6 +3,7 @@ import ServicesCard from './ServiceCard';
 import mobileDev from '../public/mobileDev.png';
 import webDev from '../public/webDev.png';
 import uiUX from '../public/uiUX.png';
+import { getServerSideProps } from '../app/page';
 
 const servicesData = [
   {
