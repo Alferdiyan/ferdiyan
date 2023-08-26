@@ -3,19 +3,20 @@ import About from "@/components/About";
 import Service from "@/components/Service";
 import ContactMe from "@/components/ContactMe";
 import Project from "@/components/Project";
+import Blogs from "@/components/blogs/Blogs";
 
 export default function Home() {
     return (
         <main>
             <Hero />
-            <section className="px-5 sm:px-10 md:px-20">
+            <div className="px-5 sm:px-10 md:px-20">
                 <About />
-            </section>
-            {/* <Navigation /> */}
-
-            <Service />
-            <Project />
-            <ContactMe />
+                {/* <Navigation /> */}
+                <Service />
+                <Project />
+                <Blogs />
+                <ContactMe />
+            </div>
         </main>
     );
 }
