@@ -30,7 +30,7 @@ export default function Footer() {
         <div className="footer items-center p-4 bg-base-100 text-primary">
             <div className="items-center grid-flow-col place-self-center sm:justify-self-start">
                 <Image src={Logo} alt="logo" width={20} height={20} />
-                <p>Copyright Ferdiyan© 2023 - All right reserved</p>
+                <p>Designed by Ferdiyan© 2024 - All right reserved</p>
             </div>
             <div className="grid-flow-col gap-4 place-self-center sm:justify-self-end">
                 <div className="flex flex-row items-center">
