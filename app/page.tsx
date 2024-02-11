@@ -15,7 +15,7 @@ export default function Home() {
                 {/* <Navigation /> */}
                 <Service />
                 <Project />
-                <Blogs />
+                {/* <Blogs /> */}
                 <ContactMe />
                 <Footer />
             </div>
