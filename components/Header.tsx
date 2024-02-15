@@ -1,27 +1,27 @@
-import React, { useState } from 'react';
-import { SocialIcon } from 'react-social-icons';
-import { motion } from 'framer-motion';
-import Navbar from './Navbar';
+import React, { useState } from "react";
+import { SocialIcon } from "react-social-icons";
+import { motion } from "framer-motion";
+import Navbar from "./Navbar";
 
 export default function Header() {
-  const [menuItems] = useState([
-    { id: 1, name: 'Home', link: '#' },
-    { id: 2, name: 'About', link: '#' },
-    { id: 3, name: 'Services', link: '#' },
-    { id: 4, name: 'Contact', link: '#' },
-  ]);
-  const [toggleMenu, setToggleMenu] = React.useState(false);
-  const [open, setOpen] = useState(false);
+    // const [menuItems] = useState([
+    //   { id: 1, name: 'Home', link: '#' },
+    //   { id: 2, name: 'About', link: '#' },
+    //   { id: 3, name: 'Services', link: '#' },
+    //   { id: 4, name: 'Contact', link: '#' },
+    // ]);
+    // const [toggleMenu, setToggleMenu] = React.useState(false);
+    // const [open, setOpen] = useState(false);
 
-  return (
-    <header className=" z-20 ">
-      <Navbar />
-    </header>
-  );
+    return (
+        <div className=" z-20 ">
+            <Navbar />
+        </div>
+    );
 }
 
 {
-  /* <header className="sticky  px-5 flex justify-between max-w-7xl mx-auto z-20 xl:items-center "> */
+    /* <header className="sticky  px-5 flex justify-between max-w-7xl mx-auto z-20 xl:items-center "> */
 }
 // </header>
 // <motion.div
