@@ -5,6 +5,7 @@ import ContactMe from "@/components/ContactMe";
 import Project from "@/components/Project";
 import Blogs from "@/components/blogs/Blogs";
 import Footer from "@/components/Footer";
+import Carousel from "@/components/Carousel";
 
 export default function Home() {
     return (
@@ -13,8 +14,9 @@ export default function Home() {
             <div className="px-5 sm:px-10 md:px-20">
                 {/* <Navigation /> */}
                 {/* <Service /> */}
-                <Project />
                 <About />
+                <Project />
+                {/* <Carousel /> */}
                 {/* <Blogs /> */}
                 <ContactMe />
                 <Footer />
