@@ -11,12 +11,12 @@ import Navbar from "./Navbar";
 export default function Hero() {
     return (
         <div className="bg-info h-screen md:min-h-screen  relative">
-            <div className="pt-8 px-10">
+            <div className="pt-8 ">
                 <Navbar />
             </div>
-            <div className="hero  relative z-10">
+            <div className="hero  relative z-10 ">
                 <div className="hero-content flex-col lg:flex-row">
-                    <div className="gap-2 flex flex-col  ">
+                    <div className="gap-2 flex flex-col md:px-10  ">
                         {profile.map((index) => (
                             <div>
                                 <p className="text-primary text-lg font-semibold">
@@ -35,13 +35,6 @@ export default function Hero() {
                                 Download CV
                             </button>
                         </div>
-                    </div>
-                    <div>
-                        <Image
-                            src={photo}
-                            alt="hero"
-                            className=" top-0 z-10  max-w-xs md:max-w-sm  rounded-full  bg-transparent"
-                        />
                     </div>
                 </div>
                 <div className="flex justify-end border items-end">

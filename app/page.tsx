@@ -11,10 +11,10 @@ export default function Home() {
         <main>
             <Hero />
             <div className="px-5 sm:px-10 md:px-20">
-                <About />
                 {/* <Navigation /> */}
-                <Service />
+                {/* <Service /> */}
                 <Project />
+                <About />
                 {/* <Blogs /> */}
                 <ContactMe />
                 <Footer />

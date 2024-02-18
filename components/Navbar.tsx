@@ -34,8 +34,8 @@ const Navbar = () => {
                     </a>
 
                     <ul className={`flex gap-4 justify-center   items-center`}>
-                        {menuItems.map((item) => (
-                            <li className="hover:text-secondary" key={item.id}>
+                        {menuItems.map((item, index) => (
+                            <li className="hover:text-secondary" key={index}>
                                 <a href={item.link}>{item.name}</a>
                             </li>
                         ))}
