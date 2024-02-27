@@ -10,9 +10,9 @@ import GetInTouch from "./button/GetInTouch";
 
 const Navbar = () => {
     const [menuItems] = useState([
-        { id: 2, name: "About", link: "#" },
-        { id: 3, name: "Service", link: "#" },
-        { id: 4, name: "Photography", link: "#" },
+        { id: 2, name: "About", link: "#about" },
+        { id: 3, name: "Service", link: "#service" },
+        { id: 4, name: "Project", link: "#project" },
     ]);
     const [toggleMenu, setToggleMenu] = React.useState(false);
     const [open, setOpen] = useState(false);
@@ -27,7 +27,7 @@ const Navbar = () => {
 
                     <a
                         href="/"
-                        className="flex gap-2 font-semibold hover:text-secondary text-3xl"
+                        className="flex gap-2 font-semibold hover:text-accent text-3xl"
                     >
                         <Image src={Logo} alt="logo" width={40} height={40} />
                         Ferdiyan
@@ -35,7 +35,7 @@ const Navbar = () => {
 
                     <ul className={`flex gap-4 justify-center   items-center`}>
                         {menuItems.map((item, index) => (
-                            <li className="hover:text-secondary" key={index}>
+                            <li className="hover:text-accent" key={index}>
                                 <a href={item.link}>{item.name}</a>
                             </li>
                         ))}
@@ -47,9 +47,21 @@ const Navbar = () => {
                 <div className="flex justify-between items-center md:hidden mb-10 ">
                     <div className="fixed top-3 left-3">
                         {/* <Image src="/logo1.svg" alt="logo" width={50} height={50} /> */}
-                        <a href="/" className="font-semibold ">
-                            Ferdiyan
-                        </a>
+                        <div className="flex gap-2 justify-center items-center">
+                            <Image
+                                src={Logo}
+                                alt="logo"
+                                width={20}
+                                height={20}
+                            />
+
+                            <a
+                                href="/"
+                                className="font-semibold hover:text-accent "
+                            >
+                                Ferdiyan
+                            </a>
+                        </div>
                     </div>
 
                     <div className="">
@@ -60,7 +72,7 @@ const Navbar = () => {
                             } bg-transparent fixed inset-0 z-40 cursor`}
                         ></div>
                         <div
-                            className="cursor-pointer fixed top-3 right-3 z-50"
+                            className="cursor-pointer fixed top-3 right-3 z-50 hover:text-accent"
                             onClick={() => setOpen(!open)}
                         >
                             {!open ? (
@@ -94,10 +106,7 @@ const Navbar = () => {
                             } bg-base-100 opacity-95 text-2xl shadow-2xl fixed w-screen h-screen left-0 right-0 top-0  flex flex-col justify-center items-center   rounded-xl    z-40  overflow-hidden gap-3 `}
                         >
                             {menuItems.map((item) => (
-                                <li
-                                    key={item.id}
-                                    className="hover:bg-secondary"
-                                >
+                                <li key={item.id} className="hover:bg-accent">
                                     <a href={item.link}>{item.name}</a>
                                 </li>
                             ))}

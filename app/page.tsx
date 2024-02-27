@@ -13,7 +13,7 @@ export default function Home() {
             <Hero />
             <div className="px-5 sm:px-10 md:px-20">
                 {/* <Navigation /> */}
-                {/* <Service /> */}
+                <Service />
                 <About />
                 <Project />
                 {/* <Carousel /> */}
