@@ -10,7 +10,7 @@ import Navbar from "./Navbar";
 
 export default function Hero() {
     return (
-        <div className="bg-base-200 min-h-screen md:h-full  relative">
+        <div className="bg-base-200 h-full  relative">
             <div className="pt-8 ">
                 <Navbar />
             </div>
