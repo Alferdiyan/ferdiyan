@@ -5,7 +5,6 @@ import ContactMe from "@/components/ContactMe";
 import Project from "@/components/Project";
 import Blogs from "@/components/blogs/Blogs";
 import Footer from "@/components/Footer";
-import Carousel from "@/components/Carousel";
 
 export default function Home() {
     return (
