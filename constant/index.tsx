@@ -86,7 +86,7 @@ export const services = [
 
 export const projects = [
     {
-        gambar: KindleCover5,
+        gambar: KindleCover2,
         projectTitle: "Ebook Cover Design",
         deskripsi: "Kindle Book Cover",
         href: "/works/ebook",
