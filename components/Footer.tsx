@@ -7,9 +7,13 @@ import Logo from "@/public/ferdiyan.svg";
 import Image from "next/image";
 
 const socialIcons = [
+    // {
+    //     url: "https://www.youtube.com/ferdiyan",
+    //     icon: "youtube",
+    // },
     {
-        url: "https://www.youtube.com/ferdiyan",
-        icon: "youtube",
+        url: "https://www.behance.com/ferdiyanUI",
+        icon: "behance",
     },
     {
         url: "https://github.com/Alferdiyan",

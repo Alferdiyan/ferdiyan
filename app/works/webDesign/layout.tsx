@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import GetInTouch from "@/components/button/GetInTouch";
 
 export const metadata = {
-    title: "Ebook Design | Eka Ferdiyanto",
+    title: "Web Design | Eka Ferdiyanto",
     description: "Graphic and Web Designer",
 };
 

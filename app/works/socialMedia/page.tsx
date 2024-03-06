@@ -1,15 +1,13 @@
 import Image from "next/image";
 import React from "react";
-import { ebook } from "@/constant";
+import { socialMedia } from "@/constant";
 
 export default function page() {
     return (
         <div>
-            <h1 className="text-lg md:text-3xl font-bold my-10">
-                Ebook Design
-            </h1>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {ebook.map((project, index) => (
+            <h1 className="text-lg font-bold my-10">Social Media Design</h1>
+            <div className="grid md:grid-cols-1 gap-4">
+                {socialMedia.map((project, index) => (
                     <Image
                         key={index}
                         src={project.gambar}

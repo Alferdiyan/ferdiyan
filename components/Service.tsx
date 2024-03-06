@@ -4,12 +4,15 @@ import mobileDev from "../public/mobileDev.png";
 import webDev from "../public/webDev.png";
 import uiUX from "../public/uiUX.png";
 
+import graphicDesigner from "../public/services/graphicDesign.svg";
+import book from "../public/services/book.svg";
+
 const servicesData = [
     {
         judul: "Graphic Design",
         description:
             "We offer professional graphic design services that elevate your business image and make you stand out.",
-        logo: mobileDev,
+        logo: graphicDesigner,
     },
     {
         judul: "Web Designer",
@@ -23,18 +26,18 @@ const servicesData = [
     //         "Intuitive, easy to use, and visually appealing for the user",
     //     logo: uiUX,
     // },
-    {
-        judul: "Photo Editing",
-        description:
-            "Elevate your brand. We'll create eye-catching visuals: enhance, restore, and creatively modify your photos.",
-        logo: uiUX,
-    },
-    {
-        judul: "E-mail Marketing Design",
-        description:
-            "Assist you in increasing email engagement by creating visually appealing and easy-to-read emails that encourage your subscribers to act.",
-        logo: uiUX,
-    },
+    // {
+    //     judul: "Photo Editing",
+    //     description:
+    //         "Elevate your brand. We'll create eye-catching visuals: enhance, restore, and creatively modify your photos.",
+    //     logo: uiUX,
+    // },
+    // {
+    //     judul: "E-mail Marketing Design",
+    //     description:
+    //         "Assist you in increasing email engagement by creating visually appealing and easy-to-read emails that encourage your subscribers to act.",
+    //     logo: uiUX,
+    // },
     {
         judul: "Social Media Design",
         description:
@@ -45,7 +48,7 @@ const servicesData = [
         judul: "Book and Layout",
         description:
             "Create eye-catching illustrations and layouts that enhance your book's visual appeal and readability.",
-        logo: uiUX,
+        logo: book,
     },
 ];
 
@@ -55,7 +58,7 @@ export default function Service(): JSX.Element {
             <div className="flex justify-center uppercase tracking-[20px] text-primary text-2xl mt-10 m-30">
                 Provide Services
             </div>
-            <div className="flex flex-col md:grid md:grid-cols-3 gap-4 my-20 items-center justify-center">
+            <div className="flex flex-col md:grid md:grid-cols-4 gap-4 my-20 items-center justify-center ">
                 {servicesData.map((service, index) => (
                     <ServicesCard
                         key={index}

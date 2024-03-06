@@ -12,7 +12,7 @@ export default function ServiceCard({ judul, description, logo }: Props) {
     return (
         <div className=" rounded-lg  hover:text-2xl h-80 w-80  flex flex-col   justify-center items-center p-5">
             <div>
-                <div className="relative flex justify-center items-center">
+                <div className="relative flex justify-center items-center ">
                     {/* <Image src={blob} alt="image" className="absolute z-10" /> */}
                     <Image
                         src={logo}
@@ -26,7 +26,9 @@ export default function ServiceCard({ judul, description, logo }: Props) {
             <br />
             <br />
             <h1 className="text-lg relative text-accent font-bold">{judul}</h1>
-            <p className="text-xs relative text-center">{description}</p>
+            <p className="text-xs relative text-center hover:text-accent">
+                {description}
+            </p>
         </div>
     );
 }

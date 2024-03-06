@@ -18,18 +18,18 @@ export default function CardGlass({
 }: Props) {
     return (
         <div>
-            <div className="card h-96 sm:h-[500px] w-[400px] sm:w-[500px] glass rounded-lg border">
+            <div className="card h-80 sm:h-[400px] w-[400px] sm:w-[500px] glass rounded-lg border">
                 <figure>
                     <Image
                         src={images}
                         alt="car!"
-                        className=" overflow-hidden"
+                        className=" overflow-hidden h-64 object-cover"
                     />
                 </figure>
 
                 <div className="card-body  ">
                     <h2 className="card-title">{cardTitle}</h2>
-                    <p>{description}</p>
+                    {/* <p>{description}</p> */}
                     <div className="card-actions justify-end">
                         <Link href={href}>
                             <button className="btn btn-primary">

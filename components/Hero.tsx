@@ -14,7 +14,7 @@ export default function Hero() {
             <div className="pt-8 ">
                 <Navbar />
             </div>
-            <div className="hero  relative z-10 ">
+            <div className="md:mx-5  relative z-10 py- ">
                 <div className="hero-content flex-col-reverse  lg:flex-row">
                     <div className="gap-2 flex flex-col md:px-10  ">
                         {profile.map((index) => (
