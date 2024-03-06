@@ -2,7 +2,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 
 export const metadata = {
-    title: "Eka Ferdiyanto | UI and Web Developer ",
+    title: "Eka Ferdiyanto | Graphic Designer ",
     description: "UI Web Designer",
 };
 

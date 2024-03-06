@@ -27,7 +27,7 @@ const socialIcons = [
 
 export default function Footer() {
     return (
-        <div className="footer items-center p-4 bg-base-100 text-primary">
+        <div className="footer items-center p-4  text-primary">
             <div className="items-center grid-flow-col place-self-center sm:justify-self-start">
                 <Image src={Logo} alt="logo" width={20} height={20} />
                 <p>Designed by Ferdiyan© 2024 - All right reserved</p>

@@ -13,6 +13,7 @@ const Navbar = () => {
         { id: 2, name: "About", link: "#about" },
         { id: 3, name: "Service", link: "#service" },
         { id: 4, name: "Project", link: "#project" },
+        { id: 5, name: "Behance", link: "https://www.behance.net/ferdiyanUI" },
     ]);
     const [toggleMenu, setToggleMenu] = React.useState(false);
     const [open, setOpen] = useState(false);

@@ -23,6 +23,7 @@ export default function Project() {
                             images={project.gambar}
                             cardTitle={project.projectTitle}
                             description={project.deskripsi}
+                            href={project.href}
                         />
                     ))}
                 </div>
