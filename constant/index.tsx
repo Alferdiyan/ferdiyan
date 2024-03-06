@@ -50,6 +50,8 @@ import mentalHealthcover from "@/public/images/socialMedia/mentalHealth/cover.pn
 
 // UI
 import AndalanDigitalCover from "@/public/images/uiDesign/AndalanDigitalcover.png";
+import AndalanDigitalWeb from "@/public/images/uiDesign/andalanDigital.png";
+import AndalanDigitaldesktop from "@/public/images/uiDesign/Desktop-Websiteweb.png";
 
 export const profile = [
     {
@@ -254,6 +256,14 @@ export const socialMedia = [
     },
 ];
 
+export const webDesign = [
+    {
+        gambar: AndalanDigitaldesktop,
+        projectTitle: "Web Design",
+        deskripsi: "web design",
+        href: "/works/webDesign",
+    },
+];
 export const socialIcons = [
     {
         url: "https://www.youtube.com/ferdiyan",
