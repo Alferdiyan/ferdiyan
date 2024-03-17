@@ -16,18 +16,12 @@ export default function About() {
                             About Me
                         </h3>
                         <h4 className=" text-center text-neutral sm:text-left font-semibold text-lg mb-4  ">
-                            Hi, my name is Eka Ferdiyanto and I'm a professional
-                            front-end developer with over 5 years of experience
-                            in building responsive and user-friendly websites. I
-                            specialize in front-end development using modern web
-                            technologies such as React and Figma.
+                            I am passionate about creating clean, elegant, and
+                            functional designs that enhance the user experience.
+                            I have a strong eye for detail and a deep
+                            understanding of the latest web design trends and
+                            best practices
                         </h4>
-                        <Link
-                            href="#"
-                            className="border px-4 py-2 rounded-full hover:bg-orange-400"
-                        >
-                            <button>download My CV</button>
-                        </Link>
                     </div>
                 </div>
             </div>

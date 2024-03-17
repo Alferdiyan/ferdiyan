@@ -57,7 +57,7 @@ export const profile = [
     {
         id: "hero",
         name: "Eka Ferdiyanto",
-        role: "Designing Brilliance, Shaping Versatility",
+        role: "Graphic Design",
         description:
             "I am passionate about creating clean, elegant, and functional designs that enhance the user experience. I have a strong eye for detail and a deep understanding of the latest web design trends and best practices",
     },
