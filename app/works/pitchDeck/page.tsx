@@ -1,14 +1,57 @@
+"use client";
+
 import Image from "next/image";
-import React from "react";
 import { pitchDeck } from "@/constant";
 
+import React from "react";
+//These are Third party packages for smooth slideshow
+import { Zoom } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
+import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/solid";
+
 export default function page() {
+    //Array of Images
+    const images = [
+        "/images/thumbnail/youtubeThumbnail1.png",
+        "/images/thumbnail/youtubeThumbnail2.png",
+        "/images/thumbnail/youtubeThumbnail3.png",
+    ];
+
+    //These are custom properties for zoom effect while slide-show
+    const zoomInProperties = {
+        scale: 1,
+        duration: 3000,
+        transitionDuration: 300,
+        infinite: true,
+        ArrowLeftIcon: false,
+        ArrowRightIcon: true,
+        prevArrow: (
+            <div className="ml-10 ">
+                <ArrowLeftIcon className="h-8 w-8  rounded-full bg-primary text-base cursor-pointer hover:text-accent" />
+            </div>
+        ),
+        nextArrow: (
+            <div className="mr-10 ">
+                <ArrowRightIcon className="h-8 w-8 rounded-full bg-primary text-base cursor-pointer hover:text-accent" />
+            </div>
+        ),
+    };
     return (
-        <div>
-            <h1 className="text-lg md:text-3xl font-bold my-10">
-                Ebook Design
-            </h1>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4 justify-center items-center">
+        <div className="flex flex-col justify-center items-center">
+            <h1 className="text-lg font-bold my-10">Cover And Layout Ebook</h1>
+            <div className="w-full  rounded-3xl overflow-hidden border border-red-300">
+                <Zoom {...zoomInProperties}>
+                    {images.map((each, index) => (
+                        <div
+                            key={index}
+                            className="flex justify-center md:items-center   "
+                        >
+                            <img className="" src={each} />
+                        </div>
+                    ))}
+                </Zoom>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4 mt-7">
                 {pitchDeck.map((project, index) => (
                     <Image
                         key={index}
