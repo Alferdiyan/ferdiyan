@@ -4,18 +4,19 @@ import drawer from "@/public/images/hero.svg";
 import GetInTouch from "@/components/button/GetInTouch";
 import cloud from "@/public/cloud.png";
 import background from "@/public/vector-background.png";
+import ferdiyan from "@/public/images/Eka_ferdiyanto.png";
 
 import { profile } from "@/constant/index";
 import Navbar from "./Navbar";
 
 export default function Hero() {
     return (
-        <div className="bg-base-200 h-full  relative">
+        <div className="bg-base-200 md:min-h-screen  relative">
             <div className="pt-8 ">
                 <Navbar />
             </div>
-            <div className="md:mx-5  relative z-10 py- ">
-                <div className="hero-content flex-col-reverse  lg:flex-row">
+            <div className="md:mx-5  relative z-10 py-14 items-center justify-center flex ">
+                <div className="hero-content flex-col-reverse lg:flex-row">
                     <div className="gap-2 flex flex-col md:px-10  ">
                         {profile.map((index) => (
                             <div>
@@ -28,19 +29,17 @@ export default function Hero() {
                                 <p className="py-6">{index.description}</p>
                             </div>
                         ))}
-                        <div className="flex gap-3  items-center">
+                        <div className="flex gap-3  items-center  ">
                             <GetInTouch />
-                            <p>or</p>
-                            <button className="text-primary hover:text-secondary">
-                                Download CV
-                            </button>
                         </div>
                     </div>
-                    <Image
-                        alt="Profile Photo"
-                        src={drawer}
-                        className="h-80 md:h-96"
-                    />
+                    <figure>
+                        <Image
+                            alt="Profile Photo"
+                            src={drawer}
+                            className=" rounded-full "
+                        />
+                    </figure>
                 </div>
             </div>
             <div className="z-10">

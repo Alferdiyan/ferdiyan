@@ -53,6 +53,10 @@ import AndalanDigitalCover from "@/public/images/uiDesign/AndalanDigitalcover.pn
 import AndalanDigitalWeb from "@/public/images/uiDesign/andalanDigital.png";
 import AndalanDigitaldesktop from "@/public/images/uiDesign/Desktop-Websiteweb.png";
 
+// Pitch Deck
+import alchemyPict from "@/public/images/pitchDeck/alchemy_cover.jpg";
+import fuelingPict from "@/public/images/pitchDeck/fuelingDay.png";
+
 export const profile = [
     {
         id: "hero",
@@ -110,6 +114,12 @@ export const projects = [
         projectTitle: "Social Media ",
         deskripsi: "coffee beans",
         href: "/works/socialMedia",
+    },
+    {
+        gambar: alchemyPict,
+        projectTitle: "Pitch deck Presentation",
+        deskripsi: "Presentation",
+        href: "/works/pitchDeck",
     },
 ];
 
@@ -264,6 +274,22 @@ export const webDesign = [
         href: "/works/webDesign",
     },
 ];
+
+export const pitchDeck = [
+    {
+        gambar: alchemyPict,
+        projectTitle: "Pict Deck Presentation",
+        deskripsi: "Presentaion",
+        href: "/works/pitchDeck",
+    },
+    {
+        gambar: fuelingPict,
+        projectTitle: "Pict Deck Presentation",
+        deskripsi: "Presentaion",
+        href: "/works/pitchDeck",
+    },
+];
+
 export const socialIcons = [
     {
         url: "https://www.youtube.com/ferdiyan",
