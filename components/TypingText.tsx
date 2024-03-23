@@ -5,6 +5,7 @@ type props = {
     color?: string;
     align?: string;
     title?: string;
+    id?: string;
 };
 export const RunningText = ({ color, align }: props) => {
     return (
@@ -27,11 +28,12 @@ export const RunningText = ({ color, align }: props) => {
     );
 };
 
-export const TitlePage = ({ title, color, align }: props) => {
+export const TitlePage = ({ title, color, align, id }: props) => {
     return (
         <motion.h2
             variants={textVariant}
             initial="hidden"
+            id={id}
             whileInView="show"
             className={`${
                 color && align
