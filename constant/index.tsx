@@ -57,7 +57,7 @@ import AndalanDigitaldesktop from "@/public/images/uiDesign/Desktop-Websiteweb.p
 import alchemyPict from "@/public/images/pitchDeck/alchemy_cover.jpg";
 import fuelingPict from "@/public/images/pitchDeck/fuelingDay.png";
 import cleaningPict from "@/public/images/pitchDeck/CleaningService.png";
-import smartPict from "@/public/images/pitchDeck/SmartHome.png";
+import smartPict from "@/public/images/pitchDeck/smarthome.png";
 
 export const profile = [
     {
