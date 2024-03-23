@@ -1,11 +1,15 @@
+"use client";
 import React from "react";
 import ServicesCard from "./ServiceCard";
 import mobileDev from "../public/mobileDev.png";
 import webDev from "../public/webDev.png";
 import uiUX from "../public/uiUX.png";
+import { motion } from "framer-motion";
 
 import graphicDesigner from "../public/services/graphicDesign.svg";
 import book from "../public/services/book.svg";
+import { RunningText, TitlePage } from "./TypingText";
+import { idText } from "typescript";
 
 const servicesData = [
     {
@@ -55,10 +59,21 @@ const servicesData = [
 export default function Service(): JSX.Element {
     return (
         <div className="h-max py-8" id="service">
-            <div className="flex justify-center uppercase tracking-[20px] text-primary text-2xl mt-10 m-30">
+            {/* <div className="flex justify-center uppercase tracking-[20px] text-primary text-2xl mt-10 m-30">
                 Provide Services
-            </div>
-            <div className="flex flex-col md:grid md:grid-cols-4 gap-4 my-20 items-center justify-center ">
+            </div> */}
+            <div></div>
+            <TitlePage title="Services" color="#7d7d7d" align="center" />
+            <div className="border border-accent w-1/3"></div>
+
+            <motion.div
+                transition={{
+                    ease: "linear",
+                    duration: 4,
+                    x: { duration: 2 },
+                }}
+                className="flex flex-col md:grid md:grid-cols-4 gap-4 my-20 items-center justify-center "
+            >
                 {servicesData.map((service, index) => (
                     <ServicesCard
                         key={index}
@@ -67,7 +82,7 @@ export default function Service(): JSX.Element {
                         logo={service.logo}
                     />
                 ))}
-            </div>
+            </motion.div>
         </div>
     );
 }

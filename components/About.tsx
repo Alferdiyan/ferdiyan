@@ -1,9 +1,11 @@
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import GetInTouch from "./button/GetInTouch";
 import tech from "@/public/tech-icons.png";
 import Link from "next/link";
+import { TitlePage } from "./TypingText";
 
 export default function About() {
     return (
@@ -12,9 +14,15 @@ export default function About() {
                 <div className=" mx-auto flex flex-col md:flex-row justify-center items-center gap-9">
                     <Image src={tech} alt="tech" className="max-w-xs "></Image>
                     <div className="max-w-xs sm:max-w-lg flex flex-col justify-center items-center px-3">
-                        <h3 className="uppercase text-center  tracking-[20px] py-6 top-14 text-neutral text-2xl  md:mb-10  ">
+                        {/* <h3 className="uppercase text-center  tracking-[20px] py-6 top-14 text-neutral text-2xl  md:mb-10  ">
                             About Me
-                        </h3>
+                        </h3> */}
+                        <TitlePage
+                            title=" About Me"
+                            color="#7d7d7d"
+                            align="center"
+                        />
+
                         <h4 className=" text-center text-neutral sm:text-left font-semibold text-lg mb-4  ">
                             I am passionate about creating clean, elegant, and
                             functional designs that enhance the user experience.

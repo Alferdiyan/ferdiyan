@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import drawer from "@/public/images/hero.svg";
@@ -5,6 +6,7 @@ import GetInTouch from "@/components/button/GetInTouch";
 import cloud from "@/public/cloud.png";
 import background from "@/public/vector-background.png";
 import ferdiyan from "@/public/images/Eka_ferdiyanto.png";
+import { motion } from "framer-motion";
 
 import { profile } from "@/constant/index";
 import Navbar from "./Navbar";
@@ -15,7 +17,7 @@ export default function Hero() {
             <div className="pt-8 ">
                 <Navbar />
             </div>
-            <div className="md:mx-5  relative z-10 py-14 items-center justify-center flex ">
+            <motion.div className="md:mx-5  relative z-10 py-14 items-center justify-center flex ">
                 <div className="hero-content flex-col-reverse lg:flex-row">
                     <div className="gap-2 flex flex-col md:px-10  ">
                         {profile.map((index) => (
@@ -33,15 +35,28 @@ export default function Hero() {
                             <GetInTouch />
                         </div>
                     </div>
-                    <figure>
+                    <motion.figure
+                        initial={{ opacity: 0, scale: 0.5 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        transition={{
+                            duration: 0.3,
+                            ease: [0, 0.71, 0.2, 1.01],
+                            scale: {
+                                type: "easeIn",
+                                damping: 5,
+                                stiffness: 100,
+                                restDelta: 0.001,
+                            },
+                        }}
+                    >
                         <Image
                             alt="Profile Photo"
                             src={drawer}
                             className=" rounded-full "
                         />
-                    </figure>
+                    </motion.figure>
                 </div>
-            </div>
+            </motion.div>
             <div className="z-10">
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

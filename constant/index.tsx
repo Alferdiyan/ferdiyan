@@ -56,6 +56,8 @@ import AndalanDigitaldesktop from "@/public/images/uiDesign/Desktop-Websiteweb.p
 // Pitch Deck
 import alchemyPict from "@/public/images/pitchDeck/alchemy_cover.jpg";
 import fuelingPict from "@/public/images/pitchDeck/fuelingDay.png";
+import cleaningPict from "@/public/images/pitchDeck/CleaningService.png";
+import smartPict from "@/public/images/pitchDeck/SmartHome.png";
 
 export const profile = [
     {
@@ -103,12 +105,12 @@ export const projects = [
         href: "/works/youtubeThumbnail",
     },
 
-    {
-        gambar: AndalanDigitalCover,
-        projectTitle: "Website Design",
-        deskripsi: "UI Web Designer",
-        href: "/works/webDesign",
-    },
+    // {
+    //     gambar: AndalanDigitalCover,
+    //     projectTitle: "Website Design",
+    //     deskripsi: "UI Web Designer",
+    //     href: "/works/webDesign",
+    // },
     {
         gambar: alchemycover,
         projectTitle: "Social Media ",
@@ -278,15 +280,27 @@ export const webDesign = [
 export const pitchDeck = [
     {
         gambar: alchemyPict,
-        projectTitle: "Pict Deck Presentation",
-        deskripsi: "Presentaion",
-        href: "/works/pitchDeck",
+        projectTitle: "Alchemy Bean: Elevating California's Coffee Experience",
+        deskripsi: "Pressentation",
+        href: "https://www.canva.com/design/DAF_cN04Gds/EjGVc7wj14Epmu7XxgM0SA/watch?utm_content=DAF_cN04Gds&utm_campaign=designshare&utm_medium=link&utm_source=editor",
     },
     {
         gambar: fuelingPict,
-        projectTitle: "Pict Deck Presentation",
-        deskripsi: "Presentaion",
-        href: "/works/pitchDeck",
+        projectTitle: "Fueling Daily Success",
+        deskripsi: "Presentation",
+        href: "https://www.canva.com/design/DAF_D33il7Y/rnl_43EF3YOATaDqdUdx5Q/watch?utm_content=DAF_D33il7Y&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+    },
+    {
+        gambar: cleaningPict,
+        projectTitle: "Cleaning Services",
+        deskripsi: "Presentation",
+        href: "https://www.canva.com/design/DAGAIs7PFGg/87OjJUfzJqBxKWRWwDjKoQ/view?utm_content=DAGAIs7PFGg&utm_campaign=designshare&utm_medium=link&utm_source=editor",
+    },
+    {
+        gambar: smartPict,
+        projectTitle: "Smart Home",
+        deskripsi: "Presentation",
+        href: "https://www.canva.com/design/DAF_f7BpAek/CE-qLn6-zm8Cy4kUH6B4YQ/watch?utm_content=DAF_f7BpAek&utm_campaign=designshare&utm_medium=link&utm_source=editor",
     },
 ];
 

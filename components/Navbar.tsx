@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-
+import { motion } from "framer-motion";
 import React, { useState } from "react";
 import Logo from "@/public/ferdiyan.svg";
 import { CgMenuRight } from "react-icons/cg";
@@ -26,13 +26,15 @@ const Navbar = () => {
                 <div className="justify-between hidden md:flex">
                     {/* Nav Menu */}
 
-                    <a
+                    <motion.a
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
                         href="/"
                         className="flex gap-2 font-semibold hover:text-accent text-3xl"
                     >
                         <Image src={Logo} alt="logo" width={40} height={40} />
                         Ferdiyan
-                    </a>
+                    </motion.a>
 
                     <ul className={`flex gap-4 justify-center   items-center`}>
                         {menuItems.map((item, index) => (
@@ -40,6 +42,7 @@ const Navbar = () => {
                                 <a href={item.link}>{item.name}</a>
                             </li>
                         ))}
+                        <GetInTouch />
                     </ul>
                 </div>
                 {/* Desktop Nav */}

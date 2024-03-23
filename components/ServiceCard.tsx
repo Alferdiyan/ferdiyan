@@ -1,6 +1,8 @@
+"use client";
 import Image, { ImageProps, StaticImageData } from "next/image";
 import React from "react";
 import blob from "@/public/blob.svg";
+import { motion } from "framer-motion";
 
 interface Props {
     judul: string;
@@ -10,7 +12,22 @@ interface Props {
 
 export default function ServiceCard({ judul, description, logo }: Props) {
     return (
-        <div className=" rounded-lg  hover:text-2xl h-80 w-80  flex flex-col   justify-center items-center p-5">
+        <motion.div
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{
+                duration: 0.3,
+
+                ease: [0, 0.71, 0.2, 1.01],
+                scale: {
+                    type: "easeIn",
+                    damping: 5,
+                    stiffness: 100,
+                    restDelta: 0.001,
+                },
+            }}
+            className=" rounded-lg  hover:text-2xl h-80 w-80  flex flex-col   justify-center items-center p-5"
+        >
             <div>
                 <div className="relative flex justify-center items-center ">
                     {/* <Image src={blob} alt="image" className="absolute z-10" /> */}
@@ -29,6 +46,6 @@ export default function ServiceCard({ judul, description, logo }: Props) {
             <p className="text-xs relative text-center hover:text-accent">
                 {description}
             </p>
-        </div>
+        </motion.div>
     );
 }
