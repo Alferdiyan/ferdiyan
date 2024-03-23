@@ -1,19 +1,28 @@
+"use client";
 import React from "react";
 import project1 from "../public/images/crisp-works.png";
 import project2 from "../public/images/lifecycle-works.png";
 import project3 from "../public/images/desktop-design.jpg";
 import CardGlass from "./button/CardGlass";
 import { projects } from "@/constant";
+import { TitlePage } from "./TypingText";
+import { motion } from "framer-motion";
 
 export default function Project() {
     return (
         <div className="h-full text-center flex flex-col md:text-left sm:max-w-[2000px] xl:px-10 min-h-screen xl:space-y-0 mx-auto items-center ">
-            <h1
+            {/* <h1
                 id="project"
                 className="flex justify-center uppercase tracking-[20px] text-primary text-2xl mt-10 mb-10"
             >
                 Project
-            </h1>
+            </h1> */}
+            <TitlePage
+                title="Project"
+                color="#7d7d7d"
+                align="center"
+                id="project"
+            />
 
             <div className="flex justify-center ">
                 <div className="flex flex-wrap gap-3 items-center justify-center">

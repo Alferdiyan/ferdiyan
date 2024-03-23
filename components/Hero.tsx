@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 
 import { profile } from "@/constant/index";
 import Navbar from "./Navbar";
+import { RunningText } from "./TypingText";
 
 export default function Hero() {
     return (
@@ -22,9 +23,12 @@ export default function Hero() {
                     <div className="gap-2 flex flex-col md:px-10  ">
                         {profile.map((index) => (
                             <div>
-                                <p className="text-accent text-lg font-semibold">
-                                    Hello I am {index.name}
-                                </p>
+                                <div className="text-accent text-lg font-semibold">
+                                    <RunningText
+                                        color="text-primary"
+                                        align="left"
+                                    />
+                                </div>
                                 <h1 className="text-3xl  md:text-5xl font-bold">
                                     {index.role}
                                 </h1>

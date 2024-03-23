@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import project1 from "../public/images/crisp-works.png";
 import project2 from "../public/images/lifecycle-works.png";
@@ -19,6 +20,7 @@ export default function PitchDeck() {
                 title="Pitch Deck Presentation"
                 color="#7d7d7d"
                 align="center"
+                id="presentation"
             />
 
             <div className="flex justify-center ">

@@ -1,4 +1,6 @@
+"use client";
 import { Carousel } from "flowbite-react";
+import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -17,7 +19,7 @@ export default function CardGlass({
     href,
 }: Props) {
     return (
-        <div>
+        <motion.div>
             <div className="card h-80 sm:h-[400px] w-[400px] sm:w-[500px] glass rounded-lg border">
                 <figure>
                     <Image
@@ -39,7 +41,7 @@ export default function CardGlass({
                     </div>
                 </div>
             </div>
-        </div>
+        </motion.div>
     );
 }
 

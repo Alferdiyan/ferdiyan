@@ -63,8 +63,12 @@ export default function Service(): JSX.Element {
                 Provide Services
             </div> */}
             <div></div>
-            <TitlePage title="Services" color="#7d7d7d" align="center" />
-            <div className="border border-accent w-1/3"></div>
+            <TitlePage
+                title="Services"
+                color="#7d7d7d"
+                align="center"
+                id="service"
+            />
 
             <motion.div
                 transition={{

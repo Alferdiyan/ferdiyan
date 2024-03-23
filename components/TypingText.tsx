@@ -17,9 +17,9 @@ export const RunningText = ({ color, align }: props) => {
                 color && align
                     ? `text-[${color}] text-[${align}]`
                     : "text-center text-gray-500"
-            } mt-10 font-semibold`}
+            }  font-semibold`}
         >
-            {Array.from("| Eka Ferdiyanto").map((letter, index) => (
+            {Array.from("Hello I'm Eka Ferdiyanto").map((letter, index) => (
                 <motion.span key={index} variants={textVariant}>
                     {letter}
                 </motion.span>
@@ -39,7 +39,7 @@ export const TitlePage = ({ title, color, align, id }: props) => {
                 color && align
                     ? `text-[${color}] text-[${align}]`
                     : "text-center text-gray-700"
-            }  font-semibold  uppercase tracking-[20px] text-primary text-2xl mt-10 m-30`}
+            }  font-semibold  uppercase tracking-[20px] text-primary text-2xl mt-10 mb-12 border-b-4`}
         >
             {title}
         </motion.h2>
